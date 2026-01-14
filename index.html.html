@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YalaReady</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-group">
+                <img src="img/logo.png" alt="Logo" class="nav-logo">       
+            </div>
+            <div class="nav-links">
+                <a href="#">หน้าแรก</a>
+                <a href="#">แผนที่</a>
+                <a href="#">ติดต่อเรา</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-map">
+        <div class="hero-overlay">
+            <h1>Yala Ready: Your Flood Preparedness Hub</h1>
+            <p>ระบบติดตามและเฝ้าระวังระดับน้ำจังหวัดยะลา</p>
+        </div>
+    </section>
+
+   <section class="search-section">
+    <div class="search-card">
+        <form action="result.html" method="GET" class="search-input-box" style="width: 100%; display: flex; gap: 15px;">
+            <span class="icon">🔍</span>
+          <select name="location" class="search-input" required style="flex: 1; padding: 10px; border-radius: 10px; border: 1px solid #ddd; font-size: 16px; outline: none;">
+    <option value="" disabled selected>เลือกอำเภอในจังหวัดยะลา...</option>
+    <option value="เมืองยะลา">อำเภอเมืองยะลา</option>
+    <option value="เบตง">อำเภอเบตง</option>
+    <option value="รามัน">อำเภอรามัน</option>
+    <option value="บันนังสตา">อำเภอบันนังสตา</option>
+    <option value="ยะหา">อำเภอยะหา</option>
+    <option value="ธารโต">อำเภอธารโต</option>
+    <option value="กาบัง">อำเภอกาบัง</option>
+    <option value="กรงปินัง">อำเภอกรงปินัง</option>
+</select>
+            <button type="submit" class="search-button">ค้นหาพื้นที่เสี่ยง</button>
+        </form>
+    </div>
+</section>
+</body>
+</html>

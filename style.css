@@ -1,0 +1,310 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* จัดเรียง 3 ส่วนจากบนลงล่าง */
+    font-family: sans-serif;
+}
+
+/* ส่วนบน (ขาว) */
+.top-nav {
+    height: 60px;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 10px;
+}
+
+.logo-small { height: 40px; }
+.brand-text { font-weight: bold; color: #0056b3; }
+
+/* ส่วนกลาง (แผนที่) */
+.middle-map {
+    flex: 1; /* ให้ส่วนนี้ขยายเต็มพื้นที่ที่เหลือ */
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('img/images.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* ส่วนล่าง (ขาวค้นหา) */
+.bottom-search {
+    height: 120px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    width: 60%;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+}
+
+.search-box button {
+    padding: 0 30px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+* {
+    box-sizing: border-box; 
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* ใช้ความสูงเต็มหน้าจอ */
+    display: flex;
+    flex-direction: column;
+    font-family: 'Kanit', sans-serif;
+}
+
+/* 1. ส่วนบน (Navbar) */
+.navbar {
+    height: 70px;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    border-bottom: 1px solid #ddd;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 45px;
+}
+
+.nav-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0056b3;
+    margin-left: 10px;
+}
+
+/* 2. ส่วนกลาง (Hero Map) */
+.hero-map {
+    flex: 1; /* ขยายพื้นที่ตรงกลาง */
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                url('img/map.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+/* 3. ส่วนล่าง (Search) */
+.search-section {
+    height: 200px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-card {
+    display: flex;
+    gap: 15px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.search-input-box {
+    flex: 1;
+    background: #f1f3f4;
+    padding: 15px 25px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.search-input-box input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    margin-left: 10px;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.search-button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 15px 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.nav-logo {
+    height: 100px; /* ยิ่งตัวเลขมาก โลโก้ยิ่งใหญ่ครับ ลองปรับจาก 80px ถึง 120px ดู */
+    width: auto;   /* บรรทัดนี้สำคัญ เพื่อไม่ให้รูปเบี้ยวครับ */
+    mix-blend-mode: multiply;
+}
+
+/* และอย่าลืมขยายความสูงของแถบเมนูให้รองรับโลโก้ที่ใหญ่ขึ้นด้วยครับ */
+.navbar {
+    height: 130px;
+}
+หน้า2
+/* =========================
+   1) ตั้งค่าพื้นฐานทั้งหน้า
+   ========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Sarabun', sans-serif;
+  background: linear-gradient(180deg, #e0f2fe 0%, #ffffff 100%);
+  padding: 20px;
+  min-height: 100vh;      /* ให้หน้าสูงตามเนื้อหา */
+}
+
+/* =========================
+   2) ตัวอักษร
+   ========================= */
+h2 {
+  font-size: 42px;
+  color: #0369a1;
+  margin: 20px 0;
+  text-align: center;
+}
+
+p {
+  font-size: 24px;
+  color: #334155;
+}
+
+/* =========================
+   3) Layout หลัก (ซ้าย-ขวา)
+   ========================= */
+.main-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* ฝั่งซ้าย (แผนที่ + ข้อมูล) */
+.left-panel {
+  flex: 2;
+}
+
+/* ฝั่งขวา (checklist) */
+.right-panel {
+  flex: 1;
+}
+
+/* =========================
+   4) กล่องแผนที่
+   ========================= */
+#map-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* SVG แผนที่ */
+svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* สีอำเภอ */
+svg path {
+  fill: #dcdcdc;
+  stroke: #ffffff;
+  stroke-width: 2;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+svg path:hover {
+  filter: brightness(0.9);
+}
+
+/* =========================
+   5) กล่องข้อมูลด้านล่าง
+   ========================= */
+#info {
+  margin: 30px auto 0;
+  padding: 30px;
+  max-width: 800px;
+  font-size: 28px;
+  font-weight: bold;
+  background: #f0f9ff;
+  border-radius: 15px;
+  border: 2px solid #7dd3fc;
+  color: #0c4a6e;
+}
+
+#info strong {
+  font-size: 38px;
+  color: #0369a1;
+}
+
+/* =========================
+   6) Checklist ด้านขวา
+   ========================= */
+.checklist-container {
+  width: 320px;
+  background: #ffffff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+แมพ
+.map-checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.map-item {
+  background: #f5f5f5;
+  padding: 14px 18px;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: 0.2s;
+}
+
+.map-item:hover {
+  background: #e0f2fe;
+  transform: translateY(-2px);
+}
